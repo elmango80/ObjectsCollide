@@ -1,6 +1,6 @@
-﻿using NGenerics.DataStructures.Mathematical;
+﻿using ObjectsCollide.Application.Enums;
 
-using ObjectsCollide.Application.Enums;
+using NGenerics.DataStructures.Mathematical;
 
 namespace ObjectsCollide.Application.Class
 {

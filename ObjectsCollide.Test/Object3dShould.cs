@@ -1,7 +1,8 @@
 ﻿using System;
 
-using NUnit.Framework;
 using ObjectsCollide.Application.Class;
+
+using NUnit.Framework;
 
 namespace ObjectsCollide.Test
 {
