@@ -1,6 +1,7 @@
 ﻿using System;
 
 using NUnit.Framework;
+using ObjectsCollide.Application.Class;
 
 namespace ObjectsCollide.Test
 {

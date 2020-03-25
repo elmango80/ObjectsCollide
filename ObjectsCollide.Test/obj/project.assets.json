@@ -417,6 +417,15 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "NGenerics/1.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NGenerics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NGenerics.dll": {}
+        }
+      },
       "NuGet.Frameworks/5.0.0": {
         "type": "package",
         "compile": {
@@ -1225,6 +1234,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "ObjectsCollide.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "NGenerics": "1.5.3"
+        },
+        "compile": {
+          "bin/placeholder/ObjectsCollide.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ObjectsCollide.Application.dll": {}
+        }
       }
     }
   },
@@ -1827,6 +1849,19 @@
         "newtonsoft.json.9.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "NGenerics/1.5.3": {
+      "sha512": "yDJD4XEsvUzEg52HAyowTrnI3SGiPTczmOQYeBstEBMNizM/4okKMxb3n5HB6t7yGQoPYV3DItlGh7dAicJc/g==",
+      "type": "package",
+      "path": "ngenerics/1.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NGenerics.dll",
+        "lib/netstandard2.0/NGenerics.release.xml",
+        "ngenerics.1.5.3.nupkg.sha512",
+        "ngenerics.nuspec"
       ]
     },
     "NuGet.Frameworks/5.0.0": {
@@ -4569,12 +4604,18 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "ObjectsCollide.Application/1.0.0": {
+      "type": "project",
+      "path": "../ObjectsCollide.Application/ObjectsCollide.Application.csproj",
+      "msbuildProject": "../ObjectsCollide.Application/ObjectsCollide.Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "ObjectsCollide.Application >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
@@ -4610,7 +4651,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GitHub\\ObjectsCollide\\ObjectsCollide.Application\\ObjectsCollide.Application.csproj": {
+              "projectPath": "C:\\GitHub\\ObjectsCollide\\ObjectsCollide.Application\\ObjectsCollide.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
